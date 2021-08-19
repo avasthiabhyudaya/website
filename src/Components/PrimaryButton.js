@@ -10,7 +10,7 @@ function PrimaryButton({title}) {
     )
 }
 
-const PrimaryButtonStyled = styled.a`
+const PrimaryButtonStyled = styled.button`
     background-color: var(--primary-color);
     padding: 0.8rem 2.5rem;
     color: white;

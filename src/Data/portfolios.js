@@ -1,10 +1,10 @@
-import img1 from '../images/portImages/crypto.jpeg';
-import img2 from '../images/portImages/javascript.jpeg';
-import img3 from '../images/portImages/snake.png';
-import img4 from '../images/portImages/reddit.png';
-import img5 from '../images/portImages/recipe.png';
-import img6 from '../images/portImages/extension.png';
-import img7 from '../images/portImages/swipe.jpeg';
+import img1 from './../images/portImages/crypto.jpeg';
+import img2 from './../images/portImages/javascript.jpeg';
+import img3 from './../images/portImages/snake.png';
+import img4 from './../images/portImages/reddit.png';
+import img5 from './../images/portImages/recipe.png';
+import img6 from './../images/portImages/extension.png';
+import img7 from './../images/portImages/swipe.jpeg';
 
 const portfolios = [
     {

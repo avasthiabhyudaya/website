@@ -10,7 +10,7 @@ const blogs = [
         month: '05',
         year: '2020',
         image: blog1,
-        link: 'https://www.linkedin.com/pulse/antsand-social-emergence-abhyudaya-avasth'
+        link: 'https://www.linkedin.com/pulse/antsand-social-emergence-abhyudaya-avasthi/'
     },    
     {
         id: 2,

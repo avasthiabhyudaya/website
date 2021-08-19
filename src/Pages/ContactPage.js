@@ -7,11 +7,41 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
+import { useState } from 'react';
+import { db } from '../Components/Firebase';
 
 function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationOnIcon />
+
+    const [name, setName] = useState("");
+    const [Email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        db.collection('contacts').add({
+            name:name,
+            Email:Email,
+            subject:subject,
+            message:message,
+        })
+        .then(() => {
+            alert("Thanks for your response 👍")
+        })
+        .catch(error => {
+            alert(error.message)
+        })
+
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+    };
+
     return (
         <MainLayout>
             <Title title={'Contact'} span={'Contact'}></Title>
@@ -21,25 +51,25 @@ function ContactPage() {
                         <div className="contact-title">
                             <h4>Get In Touch</h4>
                         </div>
-                        <form className="form">
+                        <form className="form" onSubmit={handleSubmit}>
                             <div className="form-field">
                                     <label htmlFor="name">Enter your name* </label>
-                                    <input type="text" id="name"/>
+                                    <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)}/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="email">Enter your email-id* </label>
-                                <input type="email" id="email"/>
+                                <input type="email" id="email" value={Email} onChange={(e) => setEmail(e.target.value)}/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="subject" id="subject">Subject* </label>
-                                <input type="text" id="subject"/>
+                                <input type="text" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)}/>
                             </div>         
                             <div className="form-field">
                                 <label htmlFor="">Enter Your Message*</label>
-                                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                                <textarea name="textarea" id="textarea" cols="30" rows="10" value={message}onChange={(e) => setMessage(e.target.value)}></textarea>
                             </div>
                             <div className="form-field">
-                                <PrimaryButton title={'Send Email'}/>
+                                <PrimaryButton type="button" title={'Send Email'}/>
                             </div>                                       
                         </form>
                     </div>
