@@ -54,11 +54,11 @@ function ContactPage() {
                         <form className="form" onSubmit={handleSubmit}>
                             <div className="form-field">
                                     <label htmlFor="name">Enter your name* </label>
-                                    <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)}/>
+                                    <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="email">Enter your email-id* </label>
-                                <input type="email" id="email" value={Email} onChange={(e) => setEmail(e.target.value)}/>
+                                <input type="email" id="email" value={Email} onChange={(e) => setEmail(e.target.value)} required/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="subject" id="subject">Subject* </label>
@@ -66,7 +66,7 @@ function ContactPage() {
                             </div>         
                             <div className="form-field">
                                 <label htmlFor="">Enter Your Message*</label>
-                                <textarea name="textarea" id="textarea" cols="30" rows="10" value={message}onChange={(e) => setMessage(e.target.value)}></textarea>
+                                <textarea name="textarea" id="textarea" cols="30" rows="10" value={message}onChange={(e) => setMessage(e.target.value)} required></textarea>
                             </div>
                             <div className="form-field">
                                 <PrimaryButton type="button" title={'Send Email'}/>

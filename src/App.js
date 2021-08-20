@@ -22,6 +22,10 @@ function App() {
   const [navToggle, setNavToggle] = useState(false);
 
   useEffect(() => {
+    document.title = "Abhyudaya Avasthi | Software Developer"
+  }, [])
+
+  useEffect(() => {
     document.documentElement.className = theme;
   }, [theme]);
 

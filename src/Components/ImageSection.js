@@ -31,7 +31,7 @@ function ImageSection() {
                             <p>Software Dev</p>
                         </div>
                     </div>
-                    <a href="https://drive.google.com/file/d/1iNPLd0ipUe6bXa9Fvsu6M4miTG-kpfkj/view?usp=sharing"><PrimaryButton title= {'VIEW CV'}/></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1YwEx5m_7LDISwjCjZ965xX_m3iMKyWPy/view?usp=sharing"><PrimaryButton title= {'VIEW CV'}/></a>
             </div>
         </ImageSectionStyled>
     )
