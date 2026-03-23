@@ -1,29 +1,17 @@
 {
   "files": {
-    "main.js": "./static/js/main.457357aa.chunk.js",
-    "main.js.map": "./static/js/main.457357aa.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.b67d067c.js",
-    "runtime-main.js.map": "./static/js/runtime-main.b67d067c.js.map",
-    "static/js/2.57a91ddd.chunk.js": "./static/js/2.57a91ddd.chunk.js",
-    "static/js/2.57a91ddd.chunk.js.map": "./static/js/2.57a91ddd.chunk.js.map",
+    "main.js": "./static/js/main.7cb9db56.js",
+    "static/media/crypto.jpeg": "./static/media/crypto.72c5e4de5e26efd73b21.jpeg",
+    "static/media/recipe.png": "./static/media/recipe.d11ea15f729e967d0f3b.png",
+    "static/media/reddit.png": "./static/media/reddit.900f602ee7b05f397255.png",
+    "static/media/swipe.jpeg": "./static/media/swipe.656de681e51534d947f9.jpeg",
+    "static/media/javascript.jpeg": "./static/media/javascript.d1cb8f734a97780d95be.jpeg",
+    "static/media/snake.png": "./static/media/snake.d3b252f8b27d172765b3.png",
+    "static/media/extension.png": "./static/media/extension.7ea44d856cf7321e6716.png",
     "index.html": "./index.html",
-    "static/js/2.57a91ddd.chunk.js.LICENSE.txt": "./static/js/2.57a91ddd.chunk.js.LICENSE.txt",
-    "static/media/avatar.254c6caa.jpg": "./static/media/avatar.254c6caa.jpg",
-    "static/media/blog1.7ecbb78c.svg": "./static/media/blog1.7ecbb78c.svg",
-    "static/media/crypto.72c5e4de.jpeg": "./static/media/crypto.72c5e4de.jpeg",
-    "static/media/design.3ea72af1.svg": "./static/media/design.3ea72af1.svg",
-    "static/media/extension.7ea44d85.png": "./static/media/extension.7ea44d85.png",
-    "static/media/game-dev.317e0f9b.svg": "./static/media/game-dev.317e0f9b.svg",
-    "static/media/intelligence.4450c023.svg": "./static/media/intelligence.4450c023.svg",
-    "static/media/javascript.d1cb8f73.jpeg": "./static/media/javascript.d1cb8f73.jpeg",
-    "static/media/recipe.d11ea15f.png": "./static/media/recipe.d11ea15f.png",
-    "static/media/reddit.900f602e.png": "./static/media/reddit.900f602e.png",
-    "static/media/snake.d3b252f8.png": "./static/media/snake.d3b252f8.png",
-    "static/media/swipe.656de681.jpeg": "./static/media/swipe.656de681.jpeg"
+    "main.7cb9db56.js.map": "./static/js/main.7cb9db56.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b67d067c.js",
-    "static/js/2.57a91ddd.chunk.js",
-    "static/js/main.457357aa.chunk.js"
+    "static/js/main.7cb9db56.js"
   ]
 }
